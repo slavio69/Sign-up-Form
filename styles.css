@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0e0e0e;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    width: 1000px;
+    height:100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#left-container {
+    background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+#logo-container {
+    height: 130px;
+    width: 100%;
+    margin-top: 94%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.507);
+
+}
+
+#logo {
+    height: 100%;
+    object-fit: contain;
+}
+
+#right-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#description {
+    height: 35%;
+    background-color: #f9fafb;
+    padding: 200px 0 0 40px;
+}
+
+#sign-text{
+    width: 80%;
+    font-size: 1.3rem;
+}
+
+#youknow {
+    font-size: 1.3rem;
+}
+
+h3 {
+    margin: 20px 0 0 40px;
+    width: 100%;
+}
+#form-wrapper {
+    position: relative;;
+    display: flex;
+    flex-wrap: wrap;
+    height: 25%;
+    margin-top: 0;
+}
+
+label{
+    font-size: 0.7rem;
+    position: relative;
+    
+}
+
+.row-container {
+    margin:0 0 20px 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+}
+
+#last-row {
+    margin-bottom: 0;
+}
+
+input {
+    appearance: none;
+    border: 1px solid #d9dcdf;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    height: 1.7rem;
+    padding: 2px 4px;
+}
+
+#submit-container {
+    background-color: #f9fafb;
+    height: 35%;
+    padding-left: 40px;
+}
+
+button {
+    border: none;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #596d48;
+    padding: 10px 40px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+#account {
+    margin-top: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: #596d48;
+    font-weight: bold;
+}
+
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(47, 47, 255)
+}
+
+span[class="invalid"] {
+    font-size: 0.7rem;
+    color: red;
+}
+
+span[class="valid"] {
+    display: none;
+}
+
+input[class="invalid"] {
+    border: 1px solid red;
+}
+
+
