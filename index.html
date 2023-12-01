@@ -33,22 +33,35 @@
           <h3>Let's do this!</h3>
           <form id="form-container">
             <div class="row-container">
-              <label for="first-name">FIRST NAME</label>
-              <label for="last-name">LAST NAME</label>
-              <input id="first-name" type="text" autocomplete="given-name"/>
-              <input id="last-name" type="text" autocomplete="family-name"/>
+              <div class="column">
+                <label for="first-name">FIRST NAME</label>
+                <input id="first-name" type="text" autocomplete="given-name"/>
+              </div>
+              <div class="column">
+                <label for="last-name">LAST NAME</label>
+                <input id="last-name" type="text" autocomplete="family-name"/>
+              </div>
             </div>
             <div class="row-container">
-              <label for="email">EMAIL</label>
-              <label for="phone-number">PHONE NUMBER</label>
-              <input id="email" type="email" autocomplete="email"/>
-              <input id="phone-number" type="tel" />
+              <div class="column">
+                <label for="email">EMAIL</label>
+                <input id="email" type="email" autocomplete="email"/>
+                
+              </div>
+              <div class="column">
+                <label for="phone-number">PHONE NUMBER</label>
+                <input id="phone-number" type="tel" />
+              </div>
             </div>
             <div class="row-container" id="last-row">
-              <label for="password">PASSWORD</label>
-              <label for="confirm">CONFIRM PASSWORD</label>
-              <input class="error" id="password" type="password" autocomplete="current-password"/>
-              <input class="error" id="confirm" type="password" autocomplete="new-password"/>
+              <div class="column">
+                <label for="password">PASSWORD</label>
+                <input class="error" id="password" type="password" autocomplete="current-password"/>
+              </div>
+              <div class="column">
+                <label for="confirm">CONFIRM PASSWORD</label>
+                <input class="error" id="confirm" type="password" autocomplete="new-password"/>
+              </div>
               <span id="error-message"></span>
             </div>
           </form>

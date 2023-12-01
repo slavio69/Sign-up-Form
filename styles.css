@@ -73,22 +73,26 @@ h3 {
     position: relative;;
     display: flex;
     flex-wrap: wrap;
+    flex: 1;
     height: 25%;
     margin-top: 0;
 }
 
 label{
+    display: block;
     font-size: 0.7rem;
-    position: relative;
-    
 }
 
 .row-container {
     margin:0 0 20px 40px;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.column {
+    width: 50%;
 }
 
 #last-row {
@@ -102,6 +106,7 @@ input {
     font-size: 0.9rem;
     height: 1.7rem;
     padding: 2px 4px;
+    width: 200px;
 }
 
 #submit-container {
@@ -134,6 +139,10 @@ a {
 input:focus {
     outline: none;
     border: 1px solid rgb(47, 47, 255)
+}
+
+span {
+    display: block;
 }
 
 span[class="invalid"] {
